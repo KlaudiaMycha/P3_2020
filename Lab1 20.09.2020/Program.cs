@@ -6,7 +6,7 @@ namespace Lab1_20._09._2020
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello everybody!:) ");
+            Console.WriteLine("Hello everybody! :) ");
         }
     }
 }
