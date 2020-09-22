@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Lab1_20._09._2020</RootNamespace>
   </PropertyGroup>
 
 </Project>
