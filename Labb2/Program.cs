@@ -16,9 +16,9 @@ namespace lab_2
             Console.WriteLine("Podaj liczbe a:");
             do
             {
-                Console.WriteLine("Liczba a musi byc wieksza od 0!");
+                Console.WriteLine("Liczba a musi byc rozna od 0!");
                 a = Convert.ToDouble(Console.ReadLine());
-            } while (a <= 0);
+            } while (a == 0);
             Console.WriteLine("Podaj liczbe b:");
             double b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Podaj liczbe c:");

@@ -37,24 +37,26 @@ namespace Zadlab3
 
         static void zmianaTeksu(string tekst)
         {
-            tekst = tekst.Replace('k', 'K');
+            char a = tekst[0];
+            tekst = char.ToUpper(a) + tekst.Substring(1);
             string kropka = ".";
-            int indeks = tekst.IndexOf(kropka);
-            if(indeks >=0)
+            int indeks = tekst.LastIndexOf(kropka);
+            if(indeks == -1)
             {
+                tekst += kropka;
                 Console.WriteLine("Zadanie 2. Twoj poprawiony tekst to: " + tekst);
             }
             else
             {
-                string modyfikacja = tekst.Insert(17, ".");
-                Console.WriteLine("Zadanie 2. Twoj poprawiony tekst to: " + modyfikacja);
+                Console.WriteLine("Zadanie 2. Twoj poprawiony tekst to: " + tekst);
             }
             
         }
         static void Main(string[] args)
         {
             sumowanie();
-            string tekst = "kot spi na fotelu";
+            Console.WriteLine("Wpisz swoj tekst: ");
+            string tekst = Console.ReadLine();
             zmianaTeksu(tekst);
         }
     }
