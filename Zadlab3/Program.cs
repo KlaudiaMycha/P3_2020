@@ -39,18 +39,15 @@ namespace Zadlab3
         {
             char a = tekst[0];
             tekst = char.ToUpper(a) + tekst.Substring(1);
-            string kropka = ".";
-            int indeks = tekst.LastIndexOf(kropka);
-            if(indeks == -1)
+            if (tekst.EndsWith("."))
             {
-                tekst += kropka;
-                Console.WriteLine("Zadanie 2. Twoj poprawiony tekst to: " + tekst);
+                Console.WriteLine(tekst);
             }
             else
             {
-                Console.WriteLine("Zadanie 2. Twoj poprawiony tekst to: " + tekst);
+                tekst += ".";
+                Console.WriteLine(tekst);
             }
-            
         }
         static void Main(string[] args)
         {
